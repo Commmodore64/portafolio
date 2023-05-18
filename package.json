@@ -16,6 +16,7 @@
     "react-spring": "^9.7.1",
     "react-svg": "^16.1.12",
     "react-three-fiber": "^6.0.13",
+    "react-type-animation": "^3.0.1",
     "sass": "^1.60.0",
     "three": "^0.152.2",
     "web-vitals": "^2.1.4"

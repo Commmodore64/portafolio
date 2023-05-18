@@ -5,7 +5,7 @@
 body {
   background-color: #171717;
 }
-
-
-
-
+@font-face {
+  font-family: 'AirForce-Regular';
+  src: local('AirForce-Regular'), url(./font/AirForce-Regular.ttf) format('ttf');
+}

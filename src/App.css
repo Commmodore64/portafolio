@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "Air-Force";   /*Can be any text*/
+    src: local("Air-ForceRegular"),
+      url("./font/AirForce-Regular.ttf") format("ttf");
+  }
