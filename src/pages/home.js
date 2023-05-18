@@ -64,7 +64,9 @@ function Home() {
           <Cube />
           <Controls />
         </Canvas>
-        <ReactSVG src={footerline} />
+        <div className="ml-14">
+          <ReactSVG src={footerline} />
+        </div>
       </div>
       <div className="absolute left-0 top-52 text-xs sm:text-sm transform -rotate-90 origin-top-left text-white z-0 w-20 font-mono">
         <h1 className="whitespace-nowrap text-xs mt-2">software developer</h1>
