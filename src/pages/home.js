@@ -1,6 +1,8 @@
 import { ReactSVG } from "react-svg";
 import barcode from "../img/barcode.svg";
 import footerline from "../img/footer-line.svg";
+import expand from "../img/expand.svg";
+import chevrons from "../img/chevrons-down.svg";
 import { Canvas, extend, useThree, useFrame } from "react-three-fiber";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { useRef } from "react";
@@ -68,12 +70,18 @@ function Home() {
           <ReactSVG src={footerline} />
         </div>
       </div>
+      <div>
+        <ReactSVG src={chevrons} className="fixed right-0 top-20 z-10" />
+      </div>
       <div className="absolute left-0 top-52 text-xs sm:text-sm transform -rotate-90 origin-top-left text-white z-0 w-20 font-mono">
-        <h1 className="whitespace-nowrap text-xs mt-2">software developer</h1>
+        <h1 className="whitespace-nowrap text-xs mt-2">
+          software developer [ - ]
+        </h1>
       </div>
       <div className="absolute left-0 top-64 ml-2">
         <ReactSVG src={barcode} />
         <InvisibleButton />
+        <ReactSVG src={expand} className="fixed bottom-2 left-2 z-10" />
       </div>
       <div
         className="absolute left-32 top-52 lg:left-32 lg:top-52"
