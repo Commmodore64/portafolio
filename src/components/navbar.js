@@ -2,6 +2,7 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import "../buttonstyle.scss";
+import { Link } from 'react-router-dom';
 
 function navbar() {
   return (
@@ -27,55 +28,55 @@ function navbar() {
               </Disclosure.Button>
             </div>
             <div className="hidden sm:flex sm:items-center">
-              <a href="/" className="testing">
+              <Link to="/" className="testing">
                 HOME
-              </a>
-              <a href="/" className="testing skills">
+              </Link>
+              <Link to="/Skills" className="testing skills">
                 SKILLS
-              </a>
-              <a href="/" className="testing projects">
+              </Link>
+              <Link to="/" className="testing projects">
                 PROJECTS
-              </a>
-              <a href="/" className="testing about">
+              </Link>
+              <Link to="/" className="testing about">
                 ABOUT
-              </a>
-              <a href="/" className="testing contact">
+              </Link>
+              <Link to="/" className="testing contact">
                 CONTACT
-              </a>
+              </Link>
             </div>
           </div>
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-white hover:bg-gray-700"
               >
                 HOME
-              </a>
-              <a
-                href="/"
+              </Link>
+              <Link
+                to="/"
                 className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-white hover:bg-gray-700"
               >
                 SKILLS
-              </a>
-              <a
-                href="/"
+              </Link>
+              <Link
+                to="/"
                 className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-white hover:bg-gray-700"
               >
                 PROJECTS
-              </a>
-              <a
-                href="/"
+              </Link>
+              <Link
+                to="/"
                 className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-white hover:bg-gray-700"
               >
                 ABOUT
-              </a>
-              <a
-                href="/"
+              </Link>
+              <Link
+                to="/"
                 className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-white hover:bg-gray-700"
               >
                 CONTACT
-              </a>
+              </Link>
             </div>
           </Disclosure.Panel>
           <div className="h-px bg-white w-full"></div>

@@ -1,13 +1,19 @@
-import './App.css';
-import Navbar from './components/navbar'
-import Home from './pages/home'
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/navbar';
+import Home from './pages/home';
+import Skills from './pages/skills';
 
 function App() {
   return (
-    <>
-    <Navbar/>
-    <Home/>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/skills" element={<Skills />} />
+      </Routes>
+    </Router>
   );
 }
 
